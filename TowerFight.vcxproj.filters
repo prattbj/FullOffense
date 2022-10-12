@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Casting">
+      <UniqueIdentifier>{4fd056da-7017-4e75-9ade-c9d1167018ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Scripting">
+      <UniqueIdentifier>{aded02ab-24b2-42d4-a3de-67efa3c12cc2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Casting">
+      <UniqueIdentifier>{d395ecba-1282-43ae-a005-b9c9f181ed0a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Scripting">
+      <UniqueIdentifier>{24a907e9-484b-4c6c-8b3e-22703839ab88}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Director.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Cast.cpp">
+      <Filter>Source Files\Casting</Filter>
+    </ClCompile>
+    <ClCompile Include="Fighter.cpp">
+      <Filter>Source Files\Casting</Filter>
+    </ClCompile>
+    <ClCompile Include="Script.cpp">
+      <Filter>Source Files\Scripting</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawBoard.cpp">
+      <Filter>Source Files\Scripting</Filter>
+    </ClCompile>
+    <ClCompile Include="Actor.cpp">
+      <Filter>Source Files\Casting</Filter>
+    </ClCompile>
+    <ClCompile Include="MakePurchases.cpp">
+      <Filter>Source Files\Scripting</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Source Files\Casting</Filter>
+    </ClCompile>
+    <ClCompile Include="Gatherer.cpp">
+      <Filter>Source Files\Casting</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceHut.cpp">
+      <Filter>Source Files\Casting</Filter>
+    </ClCompile>
+    <ClCompile Include="MoveActors.cpp">
+      <Filter>Source Files\Scripting</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Director.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Actor.h">
+      <Filter>Header Files\Casting</Filter>
+    </ClInclude>
+    <ClInclude Include="Cast.h">
+      <Filter>Header Files\Casting</Filter>
+    </ClInclude>
+    <ClInclude Include="Fighter.h">
+      <Filter>Header Files\Casting</Filter>
+    </ClInclude>
+    <ClInclude Include="Script.h">
+      <Filter>Header Files\Scripting</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Action.h">
+      <Filter>Header Files\Scripting</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawBoard.h">
+      <Filter>Header Files\Scripting</Filter>
+    </ClInclude>
+    <ClInclude Include="MakePurchases.h">
+      <Filter>Header Files\Scripting</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Header Files\Casting</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceHut.h">
+      <Filter>Header Files\Casting</Filter>
+    </ClInclude>
+    <ClInclude Include="Gatherer.h">
+      <Filter>Header Files\Casting</Filter>
+    </ClInclude>
+    <ClInclude Include="MoveActors.h">
+      <Filter>Header Files\Scripting</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="TowerFight.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
