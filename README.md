@@ -23,3 +23,4 @@ I used the map and list libraries in order to make my game loop function.
 * Make the movement of the actors work
 * Add actual gameplay features, like enemies, building, etc...
 * Add networking 
+* Fix the file structure
