@@ -9,6 +9,7 @@
 #include "DrawBoard.h"
 #include "ResourceHut.h"
 #include "MakePurchases.h"
+#include "MoveActors.h"
 /*
 * Main will create the objects necessary for the game to run and then call the game loop.
 */
@@ -28,11 +29,13 @@ int main()
 	cast.addActor("Player", &player);
 	DrawBoard drawBoard = DrawBoard();
 	MakePurchases makePurchases = MakePurchases();
+	MoveActors moveActors = MoveActors();
 	script.addAction("Outputs", &drawBoard);
 	script.addAction("Inputs", &makePurchases);
-	Director director = Director(cast, script);
+	script.addAction("Updates", &moveActors);
+	Director director = Director();
 	//Run the game loop
-	director.runGame();
+	director.runGame(&cast, &script);
 
 
 	return 0;

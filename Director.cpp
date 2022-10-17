@@ -2,45 +2,43 @@
 #include "Player.h"
 #include <iterator>
 #include "Action.h"
-Director::Director(Cast cast, Script script)
+Director::Director()
 {
-	this->cast = cast;
-	this->script = script;
+
 }
 //Execute everything each frame until the game ends
-void Director::runGame()
+void Director::runGame(Cast * cast, Script * script)
 {
 	bool stillPlaying = true;
 	while (stillPlaying)
 	{
-		updates();
-		outputs();
-		inputs();
+		updates(cast,  script);
+		outputs(cast, script);
+		inputs(cast, script);
 	}
 }
 
-void Director::outputs()
+void Director::outputs(Cast * cast, Script * script)
 {
-	for (Action* it : script.getActions("Outputs"))
+	for (Action* it : script->getActions("Outputs"))
 	{
-		it->execute(this->cast, this->script);
-	}
-
-}
-
-void Director::updates()
-{
-	for (Action* it : script.getActions("Updates"))
-	{
-		it->execute(this->cast, this->script);
+		it->execute(cast, script);
 	}
 }
 
-void Director::inputs()
+void Director::updates(Cast* cast, Script* script)
 {
-	for (Action* it : script.getActions("Inputs"))
+	for (Action* it : script->getActions("Updates"))
 	{
-		it->execute(this->cast, this->script);
+		it->execute(cast, script);
+	}
+}
+
+void Director::inputs(Cast* cast, Script* script)
+{
+	for (Action* it : script->getActions("Inputs"))
+	{
+		it->execute(cast, script);
 	}
 }
 

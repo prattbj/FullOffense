@@ -7,16 +7,16 @@
 class Director
 {
 public:
-	Director(Cast cast, Script script);
-	void runGame();
+	Director();
+	void runGame(Cast* cast, Script* script);
 private:
 	Script script = Script();
 	Cast cast = Cast();
 	//Outputs stuff to the screen
-	void outputs();
+	void outputs(Cast* cast, Script* script);
 	//Gets user inputs
-	void inputs();
+	void inputs(Cast* cast, Script* script);
 	//Changes the state of the game
-	void updates();
+	void updates(Cast * cast, Script * script);
 };
 

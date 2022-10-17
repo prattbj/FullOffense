@@ -14,6 +14,10 @@ public:
 	std::list<Actor*> getActors(std::string group);
 	//Add an actor to the actor list
 	void addActor(std::string group, Actor* actor);
+	std::map<std::string, std::list<Actor*>> getCast()
+	{
+		return this->cast;
+	};
 private:
 	std::map<std::string, std::list<Actor*>> cast;
 	

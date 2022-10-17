@@ -1,17 +1,16 @@
 #include "MakePurchases.h"
 #include "Player.h"
 #include "Gatherer.h"
-void MakePurchases::execute(Cast cast, Script script)
+void MakePurchases::execute(Cast* cast, Script* script)
 {
 	//Give options for the user to do things
 	bool stillBuying = true;
 	while (stillBuying)
 	{
-		for (Actor * actor : cast.getActors("Player"))
+		for (Actor * actor : cast->getActors("Player"))
 		{
 			Player* player = (Player*)actor;
 			std::cout << "Your current money: " << player->getMoney() << std::endl;
-
 
 			std::cout << "What would you like to buy?" << std::endl;
 			std::cout << "0. End Day\n1. Fighter - $20\n2. Villager - $10\n";
@@ -32,7 +31,7 @@ void MakePurchases::execute(Cast cast, Script script)
 					char lane;
 					std::cin >> lane;
 					Fighter fighter = Fighter(tolower(lane));
-					cast.addActor("Fighter", &fighter);
+					cast->addActor("Fighter", &fighter);
 					*player += -20;
 				}
 				else
@@ -50,7 +49,7 @@ void MakePurchases::execute(Cast cast, Script script)
 					char lane;
 					std::cin >> lane;
 					Gatherer gatherer = Gatherer(tolower(lane));
-					cast.addActor("Gatherer", &gatherer);
+					cast->addActor("Gatherer", &gatherer);
 					*player += -10;
 				}
 				else

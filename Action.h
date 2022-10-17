@@ -7,7 +7,7 @@
 class Action
 {
 public:
-	virtual void execute(Cast cast, Script script) {};
+	virtual void execute(Cast* cast, Script* script) {};
 };
 
 #endif

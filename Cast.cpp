@@ -7,6 +7,8 @@ std::list<Actor*> Cast::getActors(std::string group)
 //Add an actor based on a group key
 void Cast::addActor(std::string group, Actor * actor)
 {
+		
 	this->cast[group].push_back(actor);
+	
 }
 

@@ -2,7 +2,7 @@
 #include "Fighter.h"
 #include <string>
 #include <iostream>
-void DrawBoard::execute(Cast cast, Script script)
+void DrawBoard::execute(Cast* cast, Script* script)
 {
 	//These hold an amount of fighters in each location
 	//in each lane
@@ -11,9 +11,8 @@ void DrawBoard::execute(Cast cast, Script script)
 	int bot[10] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
 	int passed = 0;
 	//For each fighter, increment the number in the position
-	for (Actor* fighter : cast.getActors("Fighter"))
+	for (Actor* fighter : cast->getActors("Fighter"))
 	{
-		
 		switch (fighter->getLane())
 		{
 			case 't':
