@@ -129,6 +129,13 @@
   <ItemGroup>
     <ClCompile Include="Actor.cpp" />
     <ClCompile Include="Cast.cpp" />
+    <ClCompile Include="Casting\Actor.cpp" />
+    <ClCompile Include="Casting\Cast.cpp" />
+    <ClCompile Include="Casting\Fighter.cpp" />
+    <ClCompile Include="Casting\Gatherer.cpp" />
+    <ClCompile Include="Casting\Player.cpp" />
+    <ClCompile Include="Casting\Point.cpp" />
+    <ClCompile Include="Casting\ResourceHut.cpp" />
     <ClCompile Include="Director.cpp" />
     <ClCompile Include="DrawBoard.cpp" />
     <ClCompile Include="Fighter.cpp" />
@@ -139,11 +146,23 @@
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="ResourceHut.cpp" />
     <ClCompile Include="Script.cpp" />
+    <ClCompile Include="Scripting\Action.cpp" />
+    <ClCompile Include="Scripting\DrawBoard.cpp" />
+    <ClCompile Include="Scripting\MakePurchases.cpp" />
+    <ClCompile Include="Scripting\MoveActors.cpp" />
+    <ClCompile Include="Scripting\Script.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Action.h" />
     <ClInclude Include="Actor.h" />
     <ClInclude Include="Cast.h" />
+    <ClInclude Include="Casting\Actor.h" />
+    <ClInclude Include="Casting\Cast.h" />
+    <ClInclude Include="Casting\Fighter.h" />
+    <ClInclude Include="Casting\Gatherer.h" />
+    <ClInclude Include="Casting\Player.h" />
+    <ClInclude Include="Casting\Point.h" />
+    <ClInclude Include="Casting\ResourceHut.h" />
     <ClInclude Include="Director.h" />
     <ClInclude Include="DrawBoard.h" />
     <ClInclude Include="Fighter.h" />
@@ -154,6 +173,11 @@
     <ClInclude Include="resource.h" />
     <ClInclude Include="ResourceHut.h" />
     <ClInclude Include="Script.h" />
+    <ClInclude Include="Scripting\Action.h" />
+    <ClInclude Include="Scripting\DrawBoard.h" />
+    <ClInclude Include="Scripting\MakePurchases.h" />
+    <ClInclude Include="Scripting\MoveActors.h" />
+    <ClInclude Include="Scripting\Script.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="TowerFight.rc" />
